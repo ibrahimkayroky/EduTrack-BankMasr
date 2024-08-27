@@ -11,3 +11,12 @@ public class EduTrackApplication {
 	}
 
 }
+
+//local
+// mvn spring-boot:run -Dspring-boot.run.profiles=local
+
+//testing/UAT
+// mvn spring-boot:run -Dspring-boot.run.profiles=test
+
+//production
+// mvn spring-boot:run -Dspring-boot.run.profiles=prod

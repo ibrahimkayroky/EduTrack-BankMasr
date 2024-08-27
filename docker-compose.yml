@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  mysql-db:
+    image: mysql:8.0
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 3006
+      MYSQL_DATABASE: studentdb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 3006
+    ports:
+      - "3031:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
